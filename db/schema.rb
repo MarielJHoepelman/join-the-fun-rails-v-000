@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20200208213609) do
+=======
+ActiveRecord::Schema.define(version: 20140212205318) do
+>>>>>>> 0aa734c3a540d3dbc97c2f91e15ca89fb9cf4f29
 
   create_table "passengers", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -18,10 +22,15 @@ ActiveRecord::Schema.define(version: 20200208213609) do
   end
 
   create_table "rides", force: :cascade do |t|
+<<<<<<< HEAD
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.integer  "taxi_id"
     t.integer  "passenger_id"
+=======
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+>>>>>>> 0aa734c3a540d3dbc97c2f91e15ca89fb9cf4f29
   end
 
   create_table "taxis", force: :cascade do |t|
